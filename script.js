@@ -4,18 +4,15 @@ document.querySelectorAll("footer")[0].addEventListener("click", function () {
 })
 
 // 1.2
+var clickCount = 0;
 document.querySelectorAll("footer")[0].addEventListener("click", function () {
-    var clickCount = 0
-    if (clickCount == 0) {
-        clickCount += 1
-    };
     clickCount += 1;
     console.log("clique numéro " + clickCount);
 })
 
 // 2
 
-document.querySelectorAll("button")[0].addEventListener("click", function () {
+document.querySelectorAll(".navbar-toggler")[0].addEventListener("click", function () {
     document.getElementById("navbarHeader").classList.toggle("collapse")
 })
 
